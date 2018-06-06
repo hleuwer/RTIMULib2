@@ -33,3 +33,6 @@ uclean:
 
 install:
 	mkdir -p $(LUALIBDIR) && cp -f $(TARGET) $(LUALIBDIR)
+
+uninstall:
+	rm -rf $(LUALIBDIR)/$(TARGET)
